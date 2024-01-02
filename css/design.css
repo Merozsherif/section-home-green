@@ -1,0 +1,128 @@
+/* start golbal rules */
+:root {
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+  --main-transition: 0.3s;
+  --main-padding-bottom: 100px;
+  --main-padding-top:100px;
+  --section-background:#ececec;
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Cairo', sans-serif;
+}
+a {
+text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* end golbal rules */
+/* start header  */
+
+.header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header  img{
+  max-width: 150px;
+}
+.header .links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.header .links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.header .links ul li {
+  padding: 20px;
+  font-size: 20px;
+}
+.header .log {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.header .log h3 {
+  padding : 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.header .log a {
+  background-color: #e8549c;
+  color: white;
+  border-radius: 56px;
+  padding: 16px 40px;
+  cursor: pointer;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+}
+/* end header  */
+/* start section  */
+.container .content {
+  padding: 40px;
+  background-image: url(../css/back-image.png);
+  background-size: cover;
+  height: calc(100vh - 64px );
+  position: relative;
+}
+.container h2{
+  font-weight: bolder;
+  font-size: 80px; 
+  line-height: 1;
+}
+.container p{
+  color: grey;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.container a {
+    background-color: #e8549c;
+    color: white;
+    border-radius: 56px;
+    padding: 16px 60px;
+    cursor: pointer;
+    line-height: 1.6;
+    font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  }
+/* end section  */
